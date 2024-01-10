@@ -9,6 +9,10 @@ body {
   max-width: 1400px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -45,7 +49,11 @@ header h1 {
 
 }
 
-header h2 {
+h2 {
+  display: inline-block;
+}
+
+header h4 {
   color: white;
   font-size: 40px;
   font-weight: 400;
@@ -109,12 +117,13 @@ header a {
 }
 
 section {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
 }
 
-main h2 {
+
+h2.first-section {
   color: #5BD5E3;
   background-color: rgba(91, 213, 227, 0.15);
   font-size: 13px;
@@ -124,7 +133,7 @@ main h2 {
   margin: 0;
   padding: 2px 6px;
   text-transform: uppercase;
-  width: 189px;
+  width: max-content;
   word-wrap: break-word;
 }
 
@@ -137,7 +146,7 @@ main h3 {
   word-wrap: break-word;
 }
 
-main p {
+.grid-2-columns p {
   color: #F9F4FF;
   font-family: 'Roboto',
     sans-serif;
@@ -145,6 +154,70 @@ main p {
   font-weight: 400;
   opacity: 0.8;
   word-wrap: break-word;
+}
+
+section.second-section {
+  background-image: linear-gradient(360deg, rgba(3, 5, 4, 0.90) 0%, rgba(2, 4, 3, 0.70) 52%, rgba(11, 6, 32, 0.60) 100%), url(/images/AK5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+section.second-section h2 {
+  color: #5BD5E3;
+  background-color: rgba(91, 213, 227, 0.15);
+  font-size: 13px;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+  padding: 2px 6px;
+  text-transform: uppercase;
+  width: max-content;
+  word-wrap: break-word;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+  background-color: white;
+  color: #272044;
+  font-family: Roboto, sans-serif;
+  margin: 30px 0;
+  word-wrap: break-word;
+}
+
+.card h4 {
+  font-weight: 700;
+  font-size: 24px;
+
+}
+
+.card p {
+  color: #272044;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card a {
+  border-radius: 40px;
+  background-color: #885DF1;
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600px;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+  margin-top: 32px;
+  padding: 16px 32px;
+  text-decoration: none;
+}
+
+
+section.grid-3-columns-with-first-narrow {
+  max-width: 1200px;
 }
 
 footer {
