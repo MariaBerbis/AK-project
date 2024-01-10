@@ -110,18 +110,18 @@ header a {
   section {
     padding: 30px;
   }
-
-  .img-responsive {
-    max-width: 100%;
-  }
 }
 
 section {
   width: 100%;
-  margin: 0 auto;
-  padding: 100px;
+  margin: 0;
+  padding: 0;
 }
 
+.img-responsive {
+  max-width: 100%;
+  display: block;
+}
 
 h2.first-section {
   color: #5BD5E3;
@@ -130,7 +130,7 @@ h2.first-section {
   font-family: Poppins;
   font-weight: 700;
   letter-spacing: 5px;
-  margin: 0;
+  margin: 160px 0 0;
   padding: 2px 6px;
   text-transform: uppercase;
   width: max-content;
@@ -144,6 +144,10 @@ main h3 {
   font-weight: 700;
   margin: 0;
   word-wrap: break-word;
+}
+
+.grid-2-columns {
+  padding: 0;
 }
 
 .grid-2-columns p {
@@ -171,34 +175,55 @@ section.second-section h2 {
   font-family: Poppins, sans-serif;
   font-weight: 700;
   letter-spacing: 5px;
+  margin: 50px 0 0;
   padding: 2px 6px;
   text-transform: uppercase;
   width: max-content;
   word-wrap: break-word;
 }
 
+section.second-section h3 {
+  margin: 0;
+}
+
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 30px 60px;
 }
 
 .card {
   background-color: white;
+  border-radius: 15px;
   color: #272044;
   font-family: Roboto, sans-serif;
   margin: 30px 0;
   word-wrap: break-word;
+
+}
+
+.card-body {
+  padding: 30px;
 }
 
 .card h4 {
   font-weight: 700;
   font-size: 24px;
+  margin: 0;
+}
 
+.card h5 {
+  margin: 0;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
 }
 
 .card p {
   color: #272044;
   font-size: 16px;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .card a {
@@ -213,6 +238,11 @@ section.second-section h2 {
   margin-top: 32px;
   padding: 16px 32px;
   text-decoration: none;
+}
+
+.card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 
