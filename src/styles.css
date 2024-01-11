@@ -102,7 +102,7 @@ h2.first-section {
   font-family: Poppins;
   font-weight: 700;
   letter-spacing: 5px;
-  margin: 160px 0 0;
+  margin: 120px 0 0;
   padding: 2px 6px;
   text-transform: uppercase;
   width: max-content;
@@ -130,6 +130,7 @@ main h3 {
   font-weight: 400;
   opacity: 0.8;
   word-wrap: break-word;
+  line-height: 1.5;
 }
 
 section.second-section {
@@ -217,6 +218,34 @@ section.second-section h3 {
   border-top-right-radius: 15px;
 }
 
+section.third-section {
+  text-align: center;
+}
+
+section.third-section h2 {
+  color: #5BD5E3;
+  background-color: rgba(91, 213, 227, 0.15);
+  font-size: 13px;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin: 15px 0 0;
+  padding: 2px 6px;
+  text-transform: uppercase;
+  width: max-content;
+  word-wrap: break-word;
+}
+
+.grid-3-columns.third-section {
+  grid-gap: 30px;
+}
+
+.embed {
+  margin-left: 0;
+  margin-right: 0;
+  aspect-ratio: 1/1;
+  max-width: 80%;
+}
 
 section.grid-3-columns-with-first-narrow {
   max-width: 1200px;
@@ -261,6 +290,10 @@ footer a {
   header {
     padding: 60px 0;
     background-image: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
   }
 
   header h1 {
@@ -275,17 +308,46 @@ footer a {
     font-size: 12px;
   }
 
+  header a {
+    margin-bottom: 30px;
+  }
+
+  h2.first-section {
+    margin: 10px 0 0;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
 
+  .grid-2-columns {
+    text-align: center;
+  }
+
+  .section.second-section h2 {
+    margin: 0px;
+  }
+
+  .card {
+    margin: 0;
+  }
+
   .grid-3-columns {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+    margin: 10px 10px;
+    line-height: 0.95;
+    letter-spacing: 1.5;
   }
 
   section {
     padding: 30px;
   }
+
+  .embed {
+    aspect-ratio: 4/3;
+    width: 100%;
+  }
+
 }
