@@ -5,8 +5,8 @@ body {
 }
 
 .container {
+  max-width: 1900px;
   margin: 0 auto;
-  max-width: 1400px;
 }
 
 .text-center {
@@ -350,8 +350,13 @@ footer a {
     letter-spacing: 1.5;
   }
 
+  .section.grid-3-columns-with-first-narrow {
+    padding: 20px;
+  }
+
   section {
     padding: 30px;
+    width: auto;
   }
 
   .embed {
